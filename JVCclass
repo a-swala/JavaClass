@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Shapes {
+
+    // Method to get dimensions from the user
+    public static int[] getDimensions() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the length of the rectangle: ");
+        length = scanner.nextInt();
+        System.out.print("Enter the width of the rectangle: ");
+        width = scanner.nextInt();
+        return new int[]{length, width};
+    }
+
+    // Method to compute the area of the rectangle
+    public static int computeArea(int length, int width) {
+        return length * width;
+    }
+
+    // Method to display the area of the rectangle
+    public static void displayArea(int area) {
+        System.out.printf("The area of the rectangle is: "+ area);
+    }
+
+    // Main method to call the other methods
+    public static void main(String[] args) {
+        int[] dimensions = getDimensions();
+        int area = computeArea(dimensions[0], dimensions[1]);
+        displayArea(area); 
+}
